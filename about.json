@@ -1,5 +1,6 @@
 {
   "name": "Install Landing Modal",
-  "about_url": "https://meta.discourse.org/t/your-topic",
+  "component": true,
+  "about_url": "https://meta.discourse.org/your-topic",
   "license_url": "https://www.gnu.org/licenses/gpl-2.0.html"
 }
