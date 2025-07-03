@@ -1,0 +1,34 @@
+show_on_ios:
+  default: true
+  description: "Show install modal for iOS users?"
+
+show_on_android:
+  default: true
+  description: "Show install modal for Android users?"
+
+timer_delay_ms:
+  default: 2000
+  min: 0
+  max: 60000
+  description: "Number of ms to wait before showing modal"
+
+modal_header_text:
+  default: "Install Zenethe Magazine"
+  description: "Header for the modal"
+
+ios_video_url:
+  default: "https://your.cdn/video-ios.mp4"
+  description: "URL for the iOS Add to Home Screen instruction video"
+
+android_body_text:
+  default: "You can install Zenethe Magazine for a better experience. Tap the button below."
+  description: "Android-specific install text"
+
+modal_footer_text:
+  default: "You can always install later from your browser menu."
+  description: "Footer/help text for modal"
+
+cookie_days:
+  default: 30
+  min: 1
+  description: "Number of days before reshowing after dismiss"
