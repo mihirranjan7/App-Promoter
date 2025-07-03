@@ -1,0 +1,33 @@
+<div class="install-landing-modal">
+  <div class="modal-header">{{theme-setting "modal_header_text"}}</div>
+  <DButton
+    icon="times"
+    class="d-modal__close"
+    @translatedLabel="Close"
+    @action={{@closeModal}}
+  />
+  <div class="modal-main">
+    {{#if this.isIOS}}
+      <video
+        src="{{theme-setting "ios_video_url"}}"
+        playsinline
+        controls
+        style="width:100%;max-width:350px;"
+        poster=""
+      ></video>
+      <div style="margin-top:1em;font-size:1.08em;color:#555;">
+        Follow the steps in the video below to add Zenethe Magazine to your iOS Home Screen for a native app experience.
+      </div>
+    {{else if this.isAndroid}}
+      <div style="padding:1em;font-size:1.08em;color:#555;">
+        {{theme-setting "android_body_text"}}
+      </div>
+      {{#if this.canPromptAndroid}}
+        <button class="android-install-btn" {{on "click" this.promptAndroidInstall}}>
+          Install Zenethe Magazine
+        </button>
+      {{/if}}
+    {{/if}}
+  </div>
+  <div class="modal-footer">{{theme-setting "modal_footer_text"}}</div>
+</div>
